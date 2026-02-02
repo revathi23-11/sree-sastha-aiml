@@ -5,7 +5,7 @@ import numpy as np
 
 # Load the trained Gradient Boosting model and the scaler
 try:
-    gbm_model = joblib.load('/content/lr_model.pkl')
+    gbm_model = joblib.load('lr_model.pkl')
     scaler = joblib.load('scaler.pkl')
 except FileNotFoundError:
     st.error("Model or scaler file not found. Please make sure 'gbmreg_model.pkl' and 'scaler.pkl' are in the same directory.")
